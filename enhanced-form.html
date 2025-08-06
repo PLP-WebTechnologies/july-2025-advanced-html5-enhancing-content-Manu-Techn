@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced Form</title>
+    </head>
+<body>
+
+    <header>
+        <h1>FitLife.</h1>
+        <p>Fill in the form below. All fields marked with * are required.</p>
+    </header>
+
+    <main>
+        <!--Ordered Lists-->
+        <section>
+            <h2>Steps to Complete.</h2>
+            <ol>
+                <li>Read the instructions.</li>
+                <li>Fill out all the required fields.</li>
+                <li>Review your details.</li>
+                <li>Submit the form.</li>
+                <li>Check your email for confirmation.</li>
+            </ol>
+        </section>
+
+        <!-- Table -->
+         <section>
+            <h2>Available Membership Plans.</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Price</th>
+                        <th>Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>10 USD per month</td>
+                        <td>Access to basic features</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>25 USD per month</td>
+                        <td>Extra tools and unlimited support</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>50 USD per month</td>
+                        <td>All features, support, and a personal coach</td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+
+        <!-- Media -->
+         <section>
+            <h2>About Our services</h2>
+            <p>We offer a range of services to assist you reach your desired goals.</p>
+            <img src="https://images.pexels.com/photos/2204196/pexels-photo-2204196.jpeg" alt="Service Image" style="width:300px;height:auto;"><br>
+            <video src="https://videos.pexels.com/video-files/33261221/14170381_1920_1080_25fps.mp4" alt="Service Video" style="width:300px;height:auto;" controls>
+                Your browser does not support the video tag.
+            </video>
+         </section>
+        <!-- Form -->
+         <section>
+            <h2>Sign Up Form</h2>
+            <form action="#" method="post">
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required><br><br>
+
+                <label for="password">Password*:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="confirm password">Confirm password*:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+                <label for="dob">Date of Birth*:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select country</option>
+                    <option value="Kenya">Kenya</option>
+                    
+            </select>
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <br><br>
+            
+                <label for="goals">Fitness goals.</label>
+                <p>Please share your goals with us. This will help us tailor our services better.</p>
+                <textarea id="goals" name="goals" placeholder="What are you looking forward to achieve?"></textarea>
+                <br><br>
+                <label for="member ID">Membership Id:</label>
+                <input type="text" id="member ID" name="member ID" value="12345" readonly><br><br>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms and conditions*</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+            </form>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FitLife Gym. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
